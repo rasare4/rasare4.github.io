@@ -485,15 +485,37 @@ vertex(833, 530.1875);
 endShape(CLOSE);
 }
 function drawRainbow() {
-   // Dibuix d'un arc de Sant Martí
-   let radius = 50;
-   let colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#8B00FF']; // Colors de l'arc de Sant Martí
-
-   for (let i = 0; i < colors.length; i++) {
-       stroke(colors[i]);
-       noFill();
-       arc(0, 0, radius + i * 10, radius + i * 10, PI, TWO_PI); // Dibuixar arcs concèntrics amb diferents colors
-   }
+   // Dibuix de cold play
+  beginShape();
+curveVertex(624, 343.1875);
+curveVertex(618, 342.1875);
+curveVertex(611, 334.1875);
+curveVertex(602, 320.1875);
+curveVertex(605, 293.1875);
+curveVertex(611, 283.1875);
+curveVertex(603, 275.1875);
+curveVertex(597, 273.1875);
+curveVertex(597, 260.1875);
+curveVertex(609, 252.1875);
+curveVertex(628, 240.1875);
+curveVertex(646, 239.1875);
+curveVertex(654, 240.1875);
+curveVertex(662, 242.1875);
+curveVertex(679, 249.1875);
+curveVertex(688, 261.1875);
+curveVertex(697, 279.1875);
+curveVertex(697, 296.1875);
+curveVertex(695, 314.1875);
+curveVertex(688, 318.1875);
+curveVertex(687, 300.1875);
+curveVertex(680, 285.1875);
+curveVertex(669, 280.1875);
+curveVertex(647, 280.1875);
+curveVertex(629, 281.1875);
+curveVertex(617, 293.1875);
+curveVertex(612, 313.1875);
+curveVertex(615, 327.1875);
+endShape(CLOSE);
 }
 
 function handleFileUpload(event) {
