@@ -151,67 +151,31 @@
 
       switch (dominant) {
         case 'happy':
-            // Contorno del cuerpo
+    
   stroke(0);
   fill(10, 10, 30);
   beginShape();
-  //tus curveVertex del cuerpo
   endShape(CLOSE);
-
   // Fondo 
-  background(60, 110, 160); 
-
-  // Círculo cabeza-sol
+  background(60, 110, 160);
   fill(240, 160, 60); 
   noStroke();
   ellipse(300, 140, 300, 300); 
-
-  // Arte de vivir - torso color carne clara
+ //color de la cara
   fill(255, 225, 200); 
   stroke(0);
   beginShape();
   endShape();
-
-  // Zona de la corbata (cuello blanco)
+  // Zona corbata
   fill(255); 
   stroke(0);
   beginShape();
   //vertex cuello 
   endShape();
-
-  // Corbata
+ // Corbata
   fill(180, 0, 0); 
   stroke(0);
   beginShape();
-  //vertex corbata
-  endShape();
-
-  // Boca
-  fill(150, 0, 0); // Rojo vino
-  noStroke();
-  beginShape();
-  //vertex boca 
-  endShape();
-
-  // Ojo derecha
-  fill(0); // Negro
-  noStroke();
-  beginShape();
-  // vertex ojo derecho 
-  endShape();
-
-  // Ojo izquierda
-  fill(0); // Negro
-  noStroke();
-  beginShape();
-  // vertex ojo izquierdo
-  endShape();
-
-  // Nariz
-  fill(255, 200, 180); // Mismo tono de piel
-  noStroke();
-  beginShape();
-  //  vertex nariz
   endShape();
           stroke(255,0,0);
           beginShape();
@@ -400,7 +364,7 @@ vertex(298, 202.1875);
 vertex(285, 202.1875);
 vertex(286, 207.1875);
 endShape();
-          beginShape();//ZONA CUERPO
+          beginShape();//ZONA CUERPO2
 vertex(280, 460);
 vertex(275, 470);
 vertex(270, 490);
