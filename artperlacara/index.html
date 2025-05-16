@@ -151,68 +151,67 @@
 
       switch (dominant) {
         case 'happy':
-            // Contorno del cuerpo (traje oscuro)
+            // Contorno del cuerpo
   stroke(0);
-  fill(10, 10, 30); // Azul muy oscuro
+  fill(10, 10, 30);
   beginShape();
-  // ... tus curveVertex del cuerpo ...
+  //tus curveVertex del cuerpo
   endShape(CLOSE);
 
-  // Fondo (puedes añadir al principio del draw o setup)
-  background(60, 110, 160); // Cielo azul
+  // Fondo 
+  background(60, 110, 160); 
 
   // Círculo cabeza-sol
-  fill(240, 160, 60); // Naranja suave como en la imagen
+  fill(240, 160, 60); 
   noStroke();
-  ellipse(300, 140, 300, 300); // Ajusta tamaño/posición según tu canvas
+  ellipse(300, 140, 300, 300); 
 
   // Arte de vivir - torso color carne clara
-  fill(255, 225, 200); // Piel
+  fill(255, 225, 200); 
   stroke(0);
   beginShape();
-  // ... vertex del torso/cara ...
   endShape();
 
   // Zona de la corbata (cuello blanco)
-  fill(255); // Blanco
+  fill(255); 
   stroke(0);
   beginShape();
-  // ... vertex cuello ...
+  //vertex cuello 
   endShape();
 
   // Corbata
-  fill(180, 0, 0); // Rojo oscuro
+  fill(180, 0, 0); 
   stroke(0);
   beginShape();
-  // ... vertex corbata ...
+  //vertex corbata
   endShape();
 
   // Boca
   fill(150, 0, 0); // Rojo vino
   noStroke();
   beginShape();
-  // ... vertex boca ...
+  //vertex boca 
   endShape();
 
   // Ojo derecha
   fill(0); // Negro
   noStroke();
   beginShape();
-  // ... vertex ojo derecho ...
+  // vertex ojo derecho 
   endShape();
 
   // Ojo izquierda
   fill(0); // Negro
   noStroke();
   beginShape();
-  // ... vertex ojo izquierdo ...
+  // vertex ojo izquierdo
   endShape();
 
   // Nariz
   fill(255, 200, 180); // Mismo tono de piel
   noStroke();
   beginShape();
-  // ... vertex nariz ...
+  //  vertex nariz
   endShape();
           stroke(255,0,0);
           beginShape();
