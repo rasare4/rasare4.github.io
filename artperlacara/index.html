@@ -151,7 +151,83 @@
 
       switch (dominant) {
         case 'happy':
-    
+
+
+let headOffset = 0;
+
+function setup() {
+  createCanvas(600, 800);
+}
+
+function draw() {
+  // Movimiento vertical suave
+  headOffset = sin(frameCount * 0.05) * 5;
+
+  // Estado: 'happy'
+  background(60, 110, 160);
+
+  // Sol / fondo decorativo
+  fill(240, 160, 60); 
+  noStroke();
+  ellipse(300, 140 + headOffset, 300, 300); // Cabeza con movimiento
+
+  // Zona rostro (puedes añadir más detalles aquí)
+  fill(255, 225, 200); 
+  stroke(0);
+  beginShape();
+  endShape(CLOSE);
+
+  // Boca (animada con headOffset)
+  beginShape();
+  vertex(288, 250 + headOffset);
+  vertex(291, 248 + headOffset);
+  vertex(299, 246 + headOffset);
+  vertex(304, 247 + headOffset);
+  vertex(309, 247 + headOffset);
+  vertex(313, 248 + headOffset);
+  vertex(312, 251 + headOffset);
+  vertex(304, 257 + headOffset);
+  vertex(298, 256 + headOffset);
+  vertex(292, 253 + headOffset);
+  vertex(287, 251 + headOffset);
+  endShape();
+
+  // Ojo derecho
+  beginShape();
+  vertex(323, 215 + headOffset);
+  vertex(321, 219 + headOffset);
+  vertex(314, 218 + headOffset);
+  vertex(311, 217 + headOffset);
+  vertex(308, 215 + headOffset);
+  vertex(312, 212 + headOffset);
+  vertex(316, 209 + headOffset);
+  vertex(319, 211 + headOffset);
+  vertex(322, 210 + headOffset);
+  vertex(326, 214 + headOffset);
+  vertex(326, 215 + headOffset);
+  vertex(308, 218 + headOffset);
+  vertex(303, 215 + headOffset);
+  vertex(314, 206 + headOffset);
+  vertex(320, 206 + headOffset);
+  vertex(327, 207 + headOffset);
+  endShape();
+
+  // Ojo izquierdo
+  beginShape();
+  vertex(285, 211 + headOffset);
+  vertex(276, 209 + headOffset);
+  vertex(272, 213 + headOffset);
+  vertex(278, 217 + headOffset);
+  vertex(289, 217 + headOffset);
+  vertex(292, 214 + headOffset);
+  vertex(288, 209 + headOffset);
+  vertex(292, 210 + headOffset);
+  vertex(287, 204 + headOffset);
+  vertex(280, 205 + headOffset);
+  vertex(273, 202 + headOffset);
+  vertex(271, 205 + headOffset);
+  endShape();    
+  
   stroke(0);
   fill(10, 10, 30);
   beginShape();
