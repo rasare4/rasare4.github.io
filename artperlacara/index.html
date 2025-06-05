@@ -151,13 +151,22 @@
 
       switch (dominant) {
         case 'happy':
+          function draw () {
+  frameRate(10);//regula la velocitat a 10 fotogrames per segon
+  x=random (-5, 5); 
+  r=random (0, 255);
+  w=random (-50, 50);
+  g=random (0, 100);
+  b= (100, 255);
+  y=random (-5, 5)
+  h=random (-15, 70)
   
   stroke(0);
   fill(10, 10, 30);
   beginShape();
   endShape(CLOSE);
   // Fondo 
-  background(60, 110, 160);
+  background(60, 110+w, 160);
   fill(240, 160, 60); 
   noStroke();
   ellipse(300, 140, 300, 300); 
@@ -167,7 +176,7 @@
   beginShape();
   endShape(CLOSE);
   // Zona corbata
-  fill(255); 
+  fill(255+w); 
   stroke(0);
   beginShape();
   //vertex cuello 
@@ -282,7 +291,7 @@ vertex(310, 520);
 vertex(305, 500);
 endShape(CLOSE);
           beginShape();//boca
-vertex(288, 250.1875);
+vertex(288, 250+r.1875);
 vertex(291, 248.1875);
 vertex(299, 246.1875);
 vertex(304, 247.1875);
