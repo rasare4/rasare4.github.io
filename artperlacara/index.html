@@ -398,9 +398,8 @@ endShape(CLOSE);
   fill(10, 10, 30);
   beginShape();
   endShape(CLOSE);
-  // Fondo 
-  background(60, 110, 160);
-  fill(240, 160, 60); 
+ // Fondo
+  background(40, 70, 90);
   noStroke();
   ellipse(300, 140, 300, 300); 
  //color de la cara
@@ -414,6 +413,27 @@ endShape(CLOSE);
   beginShape();
   //vertex cuello 
   endShape(CLOSE);
+    // Cabeza color
+  fill(200, 220, 230);
+  stroke(30, 30, 60);
+  strokeWeight(1.5);
+  beginShape();
+   // Cuerpo
+  fill(190, 210, 220);
+  stroke(30, 30, 60);
+  beginShape();
+    // Lágrimas bajo los ojos
+noStroke();
+fill(100, 150, 255, 180); // Azul 
+
+// Lágrima ojo izquierdo
+ellipse(280, 230, 6, 10);
+ellipse(282, 242, 5, 8);
+
+// Lágrima ojo derecho
+ellipse(320, 230, 6, 10);
+ellipse(322, 242, 5, 8);
+
  // Corbata
   fill(180, 0, 0); 
   stroke(0);
